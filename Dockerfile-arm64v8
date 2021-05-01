@@ -27,11 +27,6 @@ RUN locale-gen en_US.utf8
 
 RUN git clone git://git.buildroot.net/buildroot --depth=1 --branch=2021.02.x /root/buildroot
 
-WORKDIR /root/buildroot
-
-ENV O=/buildroot_output
-
-VOLUME /root/buildroot/dl
-VOLUME /buildroot_output
+WORKDIR /buildroot
 
 RUN ["/bin/bash"]

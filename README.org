@@ -1,0 +1,12 @@
+* Buildroot build out-of-tree
+As default, everything built by Buildroot is stored in the directory output in the Buildroot tree.
+
+Buildroot also supports building out of tree with a syntax similar to the Linux kernel. To use it, add O=<directory> to the make command line:
+#+begin_src shell
+ $ make O=/tmp/build
+#+end_src
+or:
+#+begin_src shell
+$ cd /tmp/build; make O=$PWD -C path/to/buildroot
+#+end_src
+
