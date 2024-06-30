@@ -26,7 +26,7 @@ RUN apt-get update && \
 
 RUN locale-gen en_US.utf8
 
-RUN git clone git://git.buildroot.net/buildroot --depth=1 --branch=2021.02.x /root/buildroot
+RUN git clone git://git.buildroot.net/buildroot --depth=1 --branch=2024.05.x /root/buildroot
 
 WORKDIR /buildroot
 
